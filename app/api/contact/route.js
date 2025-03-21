@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
 // Create and configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
