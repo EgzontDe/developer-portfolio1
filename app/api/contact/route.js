@@ -1,19 +1,6 @@
 import axios from 'axios';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-
-// Create and configure Nodemailer transporter
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.GMAIL_PASSKEY,
-  },
-});
 
 // Helper function to send a message via Telegram
 async function sendTelegramMessage(token, chat_id, message) {
@@ -28,7 +15,7 @@ async function sendTelegramMessage(token, chat_id, message) {
     console.error('Error sending Telegram message:', error.response?.data || error.message);
     return false;
   }
-};
+}
 
 // HTML email template
 const generateEmailTemplate = (name, email, userMessage) => `
@@ -50,6 +37,18 @@ const generateEmailTemplate = (name, email, userMessage) => `
 async function sendEmail(payload, message) {
   const { name, email, message: userMessage } = payload;
 
+  // Create transporter at runtime to avoid build-time access to env
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.EMAIL_ADDRESS,
+      pass: process.env.GMAIL_PASSKEY,
+    },
+  });
+
   const mailOptions = {
     from: "Portfolio",
     to: process.env.EMAIL_ADDRESS,
@@ -66,29 +65,32 @@ async function sendEmail(payload, message) {
     console.error('Error while sending email:', error.message);
     return false;
   }
-};
+}
 
+// API route handler
 export async function POST(request) {
   try {
     const payload = await request.json();
     const { name, email, message: userMessage } = payload;
+
     const token = process.env.TELEGRAM_BOT_TOKEN;
     const chat_id = process.env.TELEGRAM_CHAT_ID;
+    const emailAddress = process.env.EMAIL_ADDRESS;
+    const passkey = process.env.GMAIL_PASSKEY;
 
-    // Validate environment variables
-    if (!token || !chat_id) {
+    // Validate required env variables
+    if (!token || !chat_id || !emailAddress || !passkey) {
+      console.error("Missing one or more required environment variables.");
       return NextResponse.json({
         success: false,
-        message: 'Telegram token or chat ID is missing.',
-      }, { status: 400 });
+        message: 'Server misconfiguration. Please try again later.',
+      }, { status: 500 });
     }
 
     const message = `New message from ${name}\n\nEmail: ${email}\n\nMessage:\n\n${userMessage}\n\n`;
 
-    // Send Telegram message
+    // Send messages
     const telegramSuccess = await sendTelegramMessage(token, chat_id, message);
-
-    // Send email
     const emailSuccess = await sendEmail(payload, message);
 
     if (telegramSuccess && emailSuccess) {
@@ -102,6 +104,7 @@ export async function POST(request) {
       success: false,
       message: 'Failed to send message or email.',
     }, { status: 500 });
+
   } catch (error) {
     console.error('API Error:', error.message);
     return NextResponse.json({
@@ -109,4 +112,4 @@ export async function POST(request) {
       message: 'Server error occurred.',
     }, { status: 500 });
   }
-};
+}
