@@ -1,9 +1,9 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
+    title: 'FullStack Developer/',
     company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    duration: "(Jan 2025 - Mars 2025)"
   },
   {
     id: 2,
