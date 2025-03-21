@@ -62,13 +62,12 @@ function Education() {
                         <div className="text-violet-500  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
-                          <div>
-                              <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                                  {education.title}
-                              </p>
-                              <p className="text-sm sm:text-base">{education.institution}</p>
-                              <p className="text-sm sm:text-base">{education.Country}</p>
-                          </div>
+                        <div>
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                            {education.title}
+                          </p>
+                          <p className="text-sm sm:text-base">{education.institution}</p>
+                        </div>
                       </div>
                     </div>
                   </GlowCard>

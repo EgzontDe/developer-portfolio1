@@ -1,6 +1,5 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
 export async function POST(request) {
   const reqBody = await request.json();
