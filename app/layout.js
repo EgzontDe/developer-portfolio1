@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
       </body>
+      {/* eslint-disable-next-line no-undef */}
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
     </html>
   );
