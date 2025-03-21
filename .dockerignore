@@ -7,7 +7,7 @@ yarn-error.log
 package-lock.json.backup
 
 # Ignore local development settings
-.env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local
