@@ -7,11 +7,11 @@ export const personalData = {
   phone: '+41767336295',
   address: 'Kirchbergstrasse, Burgdorf, Switzerland - 3400 ',
   github: 'https://github.com/EgzontDe',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
+  facebook: '',
   linkedIn: 'http://www.linkedin.com/in/egzontd',
   twitter: 'https://x.com/EgzontD',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
+  stackOverflow: '',
+  leetcode: "",
   devUsername: "egzontd",
   resume: "https://drive.google.com/file/d/1EjnFCHKz1dzUWiZ3jX3c2X-SxrfOpeH2/view?usp=sharing"
 }
