@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'Master’s Thesis: Digital Ethics Compass with Fuzzy Logic',
+        name: 'Digital Ethics Compass with Fuzzy Logic',
         description: "Developing an innovative assessment tool to evaluate a company's ethical responsibility in digital transformation. The system uses fuzzy logic-based linguistic summaries to enhance explainability, helping organizations integrate ethical obligations effectively.",
         tools: ['Fuzzy Logic', 'Python', 'Ethical AI', 'Linguistic Summaries'],
         role: 'Researcher & Developer',
@@ -10,10 +10,10 @@ export const projectsData = [
     },
     {
         id: 2,
-        name: 'Blockchain Payment System',
-        description: "Developed a blockchain-integrated payment solution using Django, integrating Bitcoin Core with Lightning Network for secure and decentralized transactions. Deployed and maintained Bitcoin and Lightning nodes, ensuring network stability and security.",
-        tools: ['Django', 'Bitcoin Core', 'Lightning Network', 'AWS Lambda', 'React', 'Node.js'],
-        role: 'Full Stack Developer',
+        name: 'Drowsiness Detection System',
+        description: "Implemented a drowsiness detection system using Python and OpenCV. Designed an algorithm to analyze facial expressions and detect driver fatigue in real-time.",
+        tools: ['Python', 'OpenCV', 'Machine Learning'],
+        role: 'AI Developer',
         code: '',
         demo: '',
     },
@@ -35,15 +35,7 @@ export const projectsData = [
         code: '',
         demo: '',
     },
-    {
-        id: 5,
-        name: 'Drowsiness Detection System',
-        description: "Implemented a drowsiness detection system using Python and OpenCV. Designed an algorithm to analyze facial expressions and detect driver fatigue in real-time.",
-        tools: ['Python', 'OpenCV', 'Machine Learning'],
-        role: 'AI Developer',
-        code: '',
-        demo: '',
-    },
+
     {
         id: 6,
         name: 'Secure Web & Email Server Infrastructure',
