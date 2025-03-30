@@ -28,16 +28,6 @@ export const projectsData = [
     },
     {
         id: 4,
-        name: 'Real-Time Consignment Tracking',
-        description: "Developed a real-time consignment tracking system utilizing GPS and IoT devices. Integrated backend services using Python and PostgreSQL for data management and visualization.",
-        tools: ['Python', 'PostgreSQL', 'GPS Tracking', 'IoT'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-
-    {
-        id: 6,
         name: 'Secure Web & Email Server Infrastructure',
         description: "Built a secure web server infrastructure, including custom DNS and email servers, ensuring protection from phishing, spam, and cyber threats.",
         tools: ['Linux', 'DNS', 'Email Security', 'SSL/TLS'],
@@ -46,7 +36,7 @@ export const projectsData = [
         demo: '',
     },
     {
-        id: 7,
+        id: 5,
         name: 'Virtual Reality Experience',
         description: "Designed an interactive virtual environment using MetaQuest2 and Unity, enabling immersive user experiences.",
         tools: ['Unity', 'MetaQuest2', 'VR Development'],
