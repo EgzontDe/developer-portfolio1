@@ -19,31 +19,38 @@ const Projects = () => {
 
       <div className="pt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex flex-col gap-6">
-            {leftProjects.map((project, index) => (
-              <div
-                id={`sticky-card-${index + 1}`}
-                key={index}
-                className="sticky-card w-full mx-auto sticky"
-              >
-                <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                  <ProjectCard project={project} />
+          {/* Left Column */}
+          <div>
+            <div className="flex flex-col gap-6">
+              {leftProjects.map((project, index) => (
+                <div
+                  id={`sticky-card-${index + 1}`}
+                  key={index}
+                  className="sticky-card w-full mx-auto max-w-lg sticky"
+                >
+                  <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
+                    <ProjectCard project={project} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col gap-6">
-            {rightProjects.map((project, index) => (
-              <div
-                id={`sticky-card-${index + 4}`}
-                key={index + 3}
-                className="sticky-card w-full mx-auto sticky"
-              >
-                <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                  <ProjectCard project={project} />
+          
+          {/* Right Column */}
+          <div>
+            <div className="flex flex-col gap-6">
+              {rightProjects.map((project, index) => (
+                <div
+                  id={`sticky-card-${index + 4}`}
+                  key={index + 3}
+                  className="sticky-card w-full mx-auto max-w-lg sticky"
+                >
+                  <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
+                    <ProjectCard project={project} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
