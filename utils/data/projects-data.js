@@ -19,6 +19,15 @@ export const projectsData = [
     },
     {
         id: 3,
+        name: 'Advanced Encryption Toolkit',
+        description: "Developed a comprehensive encryption toolkit offering both symmetric and asymmetric encryption methods with enhanced security features. It includes tools for file encryption, tampering demonstration, key management, and a user-friendly GUI, along with Docker support for deployment.",
+        tools: ['Python', 'PyCryptodome', 'Docker', 'tkinter', 'ttkbootstrap'],
+        role: 'Lead Developer',
+        code: '',
+        demo: '',
+    },
+    {
+        id: 4,
         name: 'Collaborative Fact-Checking Platform',
         description: "Built a web-based collaborative fact-checking tool to combat misinformation using React, NodeJS, Express, and Google Explorer API. Designed and implemented user interaction workflows to enhance credibility assessment.",
         tools: ['React', 'NodeJS', 'Express', 'Google Explorer API'],
@@ -27,7 +36,7 @@ export const projectsData = [
         demo: '',
     },
     {
-        id: 4,
+        id: 5,
         name: 'Secure Web & Email Server Infrastructure',
         description: "Built a secure web server infrastructure, including custom DNS and email servers, ensuring protection from phishing, spam, and cyber threats.",
         tools: ['Linux', 'DNS', 'Email Security', 'SSL/TLS'],
@@ -36,7 +45,7 @@ export const projectsData = [
         demo: '',
     },
     {
-        id: 5,
+        id: 6,
         name: 'Virtual Reality Experience',
         description: "Designed an interactive virtual environment using MetaQuest2 and Unity, enabling immersive user experiences.",
         tools: ['Unity', 'MetaQuest2', 'VR Development'],
