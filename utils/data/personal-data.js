@@ -5,7 +5,7 @@ export const personalData = {
   description: "My name is Egzont Demiri. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
   email: 'egzont.demiri@gmail.com',
   phone: '',
-  address: 'CH-3400 Burgdorf, Switzerland',
+  address: 'Burgdorf, Switzerland',
   github: 'https://github.com/EgzontDe',
   facebook: '',
   linkedIn: 'http://www.linkedin.com/in/egzontd',
@@ -13,5 +13,5 @@ export const personalData = {
   stackOverflow: '',
   leetcode: "",
   devUsername: "egzontd",
-  resume: "https://drive.google.com/file/d/1EjnFCHKz1dzUWiZ3jX3c2X-SxrfOpeH2/view?usp=sharing"
+  resume: ""
 }
