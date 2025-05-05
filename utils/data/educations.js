@@ -15,7 +15,7 @@ export const educations = [
   },
   {
     id: 3,
-    title: "Qualified employe with high skills in IT",
+    title: "Qualified employee with high skills in IT",
     duration: "2008 - 2012",
     institution: "Andrea Durresaku",
     Country: "Kamenice, Kosovo",
