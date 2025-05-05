@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'Digital Ethics Compass with Fuzzy Logic',
+        name: 'Swiss Digital Ethics Compass',
         description: "Developed an innovative assessment tool to evaluate a company's ethical responsibility in digital transformation. The system uses fuzzy logic-based linguistic summaries to enhance explainability and integration of ethical obligations.",
         tools: ['Fuzzy Logic', 'Python', 'Ethical AI', 'Linguistic Summaries'],
         role: 'Researcher & Developer',
@@ -19,7 +19,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        name: 'Collaborative Fact-Checking Platform',
+        name: ' Collaborative Fact-Checking Platform',
         description: "Built a web-based platform to fight misinformation by enabling users to collaboratively verify facts. Utilized React, NodeJS, and Google Explorer API to ensure effective workflow and credibility assessments.",
         tools: ['React', 'NodeJS', 'Express', 'Google Explorer API'],
         role: 'Full Stack Developer',
@@ -28,7 +28,7 @@ export const projectsData = [
     },
     {
         id: 4,
-        name: 'Secure Web & Email Server Infrastructure',
+        name: 'Web & Email Server Infrastructure',
         description: "Designed a secure web server infrastructure integrating custom DNS and email servers. Focused on enhancing protection against phishing, spam, and cyber threats using SSL/TLS protocols.",
         tools: ['Linux', 'DNS', 'Email Security', 'SSL/TLS'],
         role: 'Cybersecurity Engineer',
