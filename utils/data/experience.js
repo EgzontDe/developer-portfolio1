@@ -7,20 +7,20 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "FullStack Developer",
+    title: "Fullstack Developer & ICT CONSULTANT",
     company: "Freelancer",
-    duration: "(Jun 2021 - Jan 2022)"
+    duration: "(Jul 2018 - Jan 2021)"
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: "IT SUPPORT SPECIALIST",
+    company: "BDD Solutions SHPK.",
+    duration: "(Feb 2018 - 2021)"
   },
   {
     id: 4,
-    title: "Google Adsense Publisher",
-    company: "Google Adsense Publisher.",
-    duration: "(Jan 2014 - 2017)"
+    title: "E-Commerce & Digital Monetization",
+    company: "Google, Meta, Shopify.",
+    duration: "(Jan 2014 - Jun 2018)"
   }
 ]
