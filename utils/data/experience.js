@@ -9,18 +9,18 @@ export const experiences = [
     id: 2,
     title: "Fullstack Developer & ICT CONSULTANT",
     company: "MT Developement",
-    duration: "(Aug 2018 - Jul 2021)"
+    duration: "(Aug 2018 - Jan 2020)"
   },
   {
     id: 3,
-    title: "IT SUPPORT SPECIALIST",
-    company: "BDD Solutions SHPK.",
-    duration: "(Feb 2018 - Nov 2021)"
+    title: "IT Support Specialist",
+    company: "Freelance-Various Clients (Part-Time)",
+    duration: "(Feb 2012 - Jan 2020)"
   },
   {
     id: 4,
     title: "E-Commerce & Digital Monetization",
     company: "Google, Meta, Shopify.",
-    duration: "(Jan 2014 - Jun 2018)"
+    duration: "(May 2014 - Jun 2018)"
   }
 ]
